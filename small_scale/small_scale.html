@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="small_scale.css">
+    <script src="./small_scale.js"></script>
+    <title>Small Scale Control</title>
+</head>
+<body onload="draw();">
+    <h1>Small Scale Control</h1>
+    <div>
+        <section>
+            <h2>Make a Plot</h2>
+            <canvas id="plot" width="320" height="240" 
+            oncontextmenu="event.preventDefault();">This is a plot</canvas>
+        </section>
+        <section>
+            <h3>Window Dimensions</h3>
+            <p><strong>In Canvas:</strong> 
+                Horizontal: <span>0</span> to <span id="x-max"></span>, 
+                Vertical: <span>0</span> to <span id="y-max"></span></p> 
+            <p><strong>Transformed:</strong> 
+                Horizontal: <span id="a-min"></span> to <span id="a-max"></span>, 
+                Vertical: <span id="b-min"></span> to <span id="b-max"></span></p>   
+        </section>
+        <section>
+            <h3>Canvas Scale</h3>
+            <p>(x, y): (<span id="x-coord">x</span>, <span id="y-coord">y</span>) pixels <br>
+            Origin is in the upper-left corner. X increases horizontally to the right. 
+            Y increases vertically downward.</p>
+        </section>
+        <section>
+            <h3>Transformed Scale</h3>
+            <p>(a, b): (<span id="a-coord">a</span>, <span id="b-coord">b</span>) units <br>
+            Origin is in the center of the screen. X increases horizontally to the right, 
+            but Y increases vertically upward.</p>
+        </section> 
+    </div> 
+</body>
+</html>
