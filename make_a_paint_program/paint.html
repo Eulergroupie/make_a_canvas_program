@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paint.css">
+    <script src="paint.js"></script>
+    <title>Paint</title>
+</head>
+<body onload="draw();">
+    <h1>Paint</h1>
+    <canvas id="canvas" width="320" height="240" 
+        oncontextmenu="event.preventDefault();">Canvas Goes here</canvas>
+    <br>
+    <section>
+        <p>(x, y): <span id="column" class="changing-numbers">x</span>,
+             <span id="row" class="changing-numbers">y</span></p>
+    </section>
+</body>
+</html>
